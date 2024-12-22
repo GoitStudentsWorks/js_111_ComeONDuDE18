@@ -61,6 +61,76 @@
     border-radius: 24px;
 }
 
+/** 3 block section 'About me' **/
+.swiper-container-aboutme {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.swiper-aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 260px;
+    min-width: 0;
+}
+
+.swiper-wrapper-aboutme {
+    display: flex;
+    min-width: 0;
+    width: 260px;
+}
+
+.swiper-slide-aboutme {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    display: block;
+}
+
+.swiper-slide-text-aboutme {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    stroke-width: 1px;
+    stroke: #fafafa;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+}
+
+.swiper-slide-active-aboutme {
+    background-color: #ed3b44;
+    border-color: #ed3b44;
+}
+
+.swiper-button-next-aboutme {
+    background-color: transparent;
+    border: none;
+}
+
+.swiper-icon-aboutme {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #3b3b3b;
+
+    transition: 250ms;
+}
+
+.swiper-button-next-aboutme:focus .swiper-icon-aboutme,
+.swiper-button-next-aboutme:hover .swiper-icon-aboutme {
+    transform: scale(1.2);
+}
+
 @media screen and (min-width: 768px) {
     /** 1 block section 'About me' **/ 
 
@@ -79,6 +149,22 @@
         line-height: 105%;
         letter-spacing: -0.03em;
     }
+
+    /** 3 block section 'About me' **/
+
+    .swiper-aboutme {
+        width: 600px;
+    }
+
+    .swiper-slide-text-aboutme {
+        height: 200px;
+        width: 200px;
+    }
+
+    .swiper-icon-aboutme {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -91,5 +177,20 @@
     .content-list-aboutme .text {
         max-width: 680px;
         height: 700px;
+    }
+
+    /** 3 block section 'About me' **/
+    .swiper-container-aboutme {
+        gap: 72px;
+        justify-content: flex-start;
+    }
+
+    .swiper-aboutme {
+        width: 1200px;
+    }
+
+    .swiper-icon-aboutme {
+        width: 40px;
+        height: 40px;
     }
 }
