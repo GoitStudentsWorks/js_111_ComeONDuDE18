@@ -1,0 +1,95 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/** 1 block section 'About me' **/ 
+
+.section .container-aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-list-aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-item-aboutme {
+    height: 500px;
+}
+
+.content-list-aboutme .text {
+    padding: 32px;
+    padding-bottom: 272px;
+
+    background-color: #242527;
+    border-radius: 24px;
+}
+
+.aboutme-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.span-functional {
+    color: #ed3b44;
+}
+
+.span-websites {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    /** 1 block section 'About me' **/ 
+
+    .content-item-aboutme {
+        height: 700px;
+    }
+
+    .content-list-aboutme .text {
+        padding: 64px;
+        padding-bottom: 436px;
+        max-width: 704px;
+    }
+
+    .aboutme-title {
+        font-size: 38px;
+        line-height: 105%;
+        letter-spacing: -0.03em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /** 1 block section 'About me' **/ 
+    
+    .content-list-aboutme {
+        flex-direction: row;
+    }
+
+    .content-list-aboutme .text {
+        max-width: 680px;
+        height: 700px;
+    }
+}
