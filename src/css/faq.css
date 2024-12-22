@@ -1,0 +1,20 @@
+/* Уникальные стили для секции FAQ */#faq-section {
+    background-color: #121212;  padding: 40px 20px;
+    color: #fff;}
+  #faq-section .faq-container {
+    display: grid;  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px;  max-width: 1200px;
+    margin: 0 auto;
+  }
+  #faq-section .faq-item {  background-color: #1e1e1e;
+    padding: 20px;  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #faq-section .faq-item:hover {  transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);}
+  #faq-section .faq-item h3 {
+    font-size: 18px;  margin-bottom: 10px;
+  }
+  #faq-section .faq-item p {
+    font-size: 16px;  line-height: 1.5;
+    color: #ccc;}
