@@ -1,6 +1,7 @@
 .footer {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 137px;
 }
 
 .footer-title {
@@ -36,7 +37,8 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: rgba(250, 250, 250, 0.6);
+  border-color: transparent;
 }
 
 .input {
@@ -80,6 +82,10 @@
 .send-btn:active {
   background-color: #e0373f;
   transform: scale(1.05);
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contacts-list {
@@ -155,7 +161,6 @@
 @media only screen and (min-width: 1440px) {
   .footer {
     margin-top: 80px;
-    margin-bottom: 196px;
   }
 
   .footer-title {
@@ -176,7 +181,7 @@
   }
 }
 
-/* clasі for js */
+/* class for js */
 
 .is-visible {
   display: block;
