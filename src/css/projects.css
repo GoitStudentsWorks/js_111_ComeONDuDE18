@@ -1,14 +1,4 @@
 /* Mobile */
-.portfolio-section {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #121212;
-}
-
 .portfolio-title {
     margin-top: 32px;
     margin-bottom: 32px;
