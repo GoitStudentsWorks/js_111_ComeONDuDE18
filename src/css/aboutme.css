@@ -244,12 +244,10 @@
     transition: stroke 250ms ease;
 }
 
-.swiper-button-next-aboutme:focus,
 .swiper-button-next-aboutme:hover {
     background-color: #ed3b44;
 }
 
-.swiper-button-next-aboutme:focus .swiper-icon-aboutme,
 .swiper-button-next-aboutme:hover .swiper-icon-aboutme {
     stroke: #1c1d20;
 }
