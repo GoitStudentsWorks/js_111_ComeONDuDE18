@@ -1,13 +1,13 @@
 /* Стили для секции FAQ */
 #faq-section {
-  background-color: #121212;
-  padding: 40px 20px;
+  background-color: #1e1e1e;
+  padding: 40px 10px; /* Уменьшен отступ по бокам */
 }
 
 .faq-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Две колонки на ПК */
-  gap: 40px; /* Расстояние между элементами */
+  gap: 20px; /* Расстояние между карточками */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -19,7 +19,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  margin-bottom: 60px; /* Увеличен отступ снизу для дополнительного пространства */
+  margin-bottom: 20px;
 }
 
 .faq-item:hover {
@@ -41,20 +41,26 @@
 }
 
 .faq-arrow {
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #555; /* Серый круг */
+  color: #fff; /* Белая стрелка */
+  font-size: 16px;
   transition: transform 0.3s ease;
-  color: #fff; /* Стрелка тоже белая */
 }
 
 .faq-content {
   font-size: 16px;
   line-height: 1.5;
-  color: #ccc;
+  color: #999; /* Текст серого цвета */
   margin-top: 10px;
-  display: none;
+  display: none; /* Скрываем контент по умолчанию */
 }
 
-/* Стили для активного элемента */
 .faq-item.active .faq-arrow {
   transform: rotate(180deg); /* Переворачиваем стрелку */
 }
@@ -67,19 +73,6 @@
 @media (max-width: 1024px) {
   .faq-container {
     grid-template-columns: 1fr; /* Одна колонка */
-  }
-
-  .faq-item {
-    padding: 15px;
-    margin-bottom: 40px; /* Уменьшен отступ снизу для мобильных */
-  }
-
-  .faq-header h3 {
-    font-size: 16px;
-  }
-
-  .faq-content {
-    font-size: 14px;
   }
 }
 
