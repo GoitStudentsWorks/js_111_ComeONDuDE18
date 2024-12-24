@@ -1,6 +1,5 @@
 /* Mobile */
 .portfolio-title {
-    margin-top: 32px;
     margin-bottom: 32px;
     font-family: Inter Tight;
     font-size: 16px;
@@ -200,9 +199,9 @@
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-    .portfolio-container {
+    .portfolio .container {
         max-width: 1376px;
-        margin-left: 32px;
+        margin: 0 auto;
     }
 
     .swiper-slide.project-swiper-slide {

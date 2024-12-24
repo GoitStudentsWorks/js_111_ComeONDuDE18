@@ -1,31 +1,35 @@
-const openModal = document.querySelector('.menu-btn');
-const openMenu = document.querySelector('.menu-tab');
-const closeModal = document.querySelector('.modal-close-btn');
-const modal = document.querySelector('.modal-overlay');
-const menuItems = document.querySelectorAll('.menu-item');
+const modal = {
+  overlay: document.querySelector('.modal-overlay'),
+  openBtn: document.querySelector('.menu-btn'),
+  closeBtn: document.querySelector('.modal-close-btn'),
+  menuItems: document.querySelectorAll('.menu-item'),
+};
 
-openModal.addEventListener('click', () => {
-  modal.style.display = 'block';
-  console.log('ok');
+const dropdown = {
+  menu: document.querySelector('.dropdown'),
+  toggleBtn: document.querySelector('.menu-tab'),
+};
+
+const showModal = () => (modal.overlay.style.display = 'block');
+const hideModal = () => (modal.overlay.style.display = 'none');
+
+modal.openBtn.addEventListener('click', showModal);
+modal.closeBtn.addEventListener('click', hideModal);
+modal.overlay.addEventListener('click', event => {
+  if (event.target === modal.overlay) hideModal();
 });
+modal.menuItems.forEach(item => item.addEventListener('click', hideModal));
 
-openMenu.addEventListener('click', () => {
-  modal.style.display = 'block';
-  console.log('ok');
-});
+const toggleDropdown = () => dropdown.menu.classList.toggle('hidden');
+const hideDropdown = () => dropdown.menu.classList.add('hidden');
 
-closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', event => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
+dropdown.toggleBtn.addEventListener('click', toggleDropdown);
+dropdown.menu.addEventListener('click', toggleDropdown);
+document.addEventListener('click', event => {
+  if (
+    !dropdown.toggleBtn.contains(event.target) &&
+    !dropdown.menu.contains(event.target)
+  ) {
+    hideDropdown();
   }
-});
-
-menuItems.forEach(item => {
-  item.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
 });
