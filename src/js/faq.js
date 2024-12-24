@@ -1,17 +1,10 @@
-// Логика для FAQ (показ/скрытие контента)
-document.querySelectorAll('.faq-header').forEach(header => {
+// Получаем все элементы FAQ
+const faqItems = document.querySelectorAll('.faq-item');
+
+// Добавляем обработчики событий на каждый элемент
+faqItems.forEach(item => {
+  const header = item.querySelector('.faq-header');
   header.addEventListener('click', () => {
-    const item = header.parentElement;
-
-    // Закрываем другие открытые элементы
-    document.querySelectorAll('.faq-item').forEach(el => {
-      if (el !== item) {
-        el.classList.remove('active'); // Скрываем остальные элементы
-      }
-    });
-
-    // Открываем или закрываем текущий элемент
-    item.classList.toggle('active');
+    item.classList.toggle('active'); // Переключаем состояние текущего элемента
   });
 });
-  

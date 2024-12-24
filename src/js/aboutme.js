@@ -3,10 +3,27 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation'
 import 'swiper/css/keyboard'
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 const nextSlideBtnAMe = document.querySelector('.swiper-button-next-aboutme');
-const swiperContainer = document.querySelector('.swiper-aboutme')
+const swiperContainer = document.querySelector('.swiper-aboutme');
+const acContainerClass = document.querySelector('.accordion-container-aboutme');
 
+//second block - accordion
+new Accordion(acContainerClass, {
+    duration: 600,
+    openOnInit: [0],
+
+    elementClass: 'ac-aboutme',
+    triggerClass: 'ac-header-aboutme',
+    panelClass: 'ac-panel-aboutme',
+    activeClass: 'is-active-aboutme',
+
+    showMultiple: true,
+})
+
+//third block - swiper
 const swiperAboutme = new Swiper(swiperContainer, {
     wrapperClass: 'swiper-wrapper-aboutme',
     slideClass: 'swiper-slide-aboutme',

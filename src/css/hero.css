@@ -2,14 +2,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-image: url('../img/ImgHero/hero1xred-mobile.webp');
+  background-image: url('../img/imghero/hero1xred-mobile.webp');
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/ImgHero/hero2xred-mobile.webp');
+    background-image: url('../img/imghero/hero2xred-mobile.webp');
   }
 }
 
@@ -42,7 +42,7 @@
 .mail:hover,
 .mail:focus,
 .mail:active {
-  border-color: var(--Main_text);
+  border-color: #fafafa;
 }
 
 .mail-link {
@@ -81,7 +81,7 @@
 .hero-item:hover,
 .hero-item:focus,
 .hero-item:active {
-  border-color: var(--Main_text);
+  border-color: #fafafa;
 }
 
 .social-link {
@@ -94,14 +94,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../img/ImgHero/hero1xred-tablet.webp');
+    background-image: url('../img/imghero/hero1xred-tablet.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/ImgHero/hero2xred-tablet.webp');
+      background-image: url('../img/imghero/hero2xred-tablet.webp');
     }
   }
 
@@ -123,14 +123,14 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/ImgHero/hero1xred-desktop.webp');
+    background-image: url('../img/imghero/hero1xred-desktop.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/ImgHero/hero2xred-desktop.webp');
+      background-image: url('../img/imghero/hero2xred-desktop.webp');
     }
   }
 
