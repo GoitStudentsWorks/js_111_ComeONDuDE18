@@ -42,7 +42,7 @@
 .mail:hover,
 .mail:focus,
 .mail:active {
-  border-color: var(--Main_text);
+  border-color: #fafafa;
 }
 
 .mail-link {
@@ -81,7 +81,7 @@
 .hero-item:hover,
 .hero-item:focus,
 .hero-item:active {
-  border-color: var(--Main_text);
+  border-color: #fafafa;
 }
 
 .social-link {
