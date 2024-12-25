@@ -1,8 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 const swiper = new Swiper('.project-swiper-container', {
-
+    modules: [Navigation, Keyboard, Mousewheel],
     slidesPerView: 1,
     spaceBetween: 16,
     watchOverflow: false,
@@ -17,4 +18,10 @@ const swiper = new Swiper('.project-swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    keyboard: {
+        benabled: true,
+        onlyInViewport: true,
+    },
+
+    mousewheel: true,
 });
