@@ -14,7 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="preload"
+    href="./css/styles.css"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+  <noscript>
     <link rel="stylesheet" href="./css/styles.css" />
+  </noscript>
   </head>
   <body>
     <load src="./partials/header.html" />
@@ -33,11 +41,11 @@
       <load src="./partials/worktogether.html" />
     </footer>
 
-    <script type="module" src="./js/aboutme.js"></script>
-    <script type="module" src="./js/projects.js"></script>
-    <script type="module" src="./js/faq.js"></script>
-    <script type="module" src="./js/reviews.js"></script>
-    <script type="module" src="./main.js"></script>
-    
+    <script type="module" src="./js/aboutme.js" defer></script>
+    <script type="module" src="./js/projects.js" defer></script>
+    <script type="module" src="./js/faq.js" defer></script>
+    <script type="module" src="./js/reviews.js" defer></script>
+    <script type="module" src="./main.js" defer></script>
+
   </body>
 </html>
