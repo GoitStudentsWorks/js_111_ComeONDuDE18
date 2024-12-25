@@ -36,52 +36,6 @@
     display: none;
 }
 
-.dropdown {
-    position: absolute;
-    top: 150%;
-    left: -75%;
-    background-color: transparent;
-    z-index: 999;
-    width: 150px;
-}
-
-.dropdownMenu-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.dropdownMenu-list .menu-item {
-    text-decoration: none;
-}
-
-.hidden {
-    display: none;
-}
-
-.menu-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.menu-item {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    color: #fafafa;
-}
-
-.menu-item:hover,
-.dropdownMenu-list:hover {
-    color: #ed3b44;
-}
-
 .order-btn {
     display: flex;
     align-items: center;
@@ -110,7 +64,7 @@
 }
 
 .modal-overlay {
-    background-image: url('./img/ImgHero/hero1xred-mobile.webp');
+    background-image: url('./img/imghero/hero1xred-mobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -174,6 +128,50 @@
         display: inline-block;
     }
 
+    .dropdown {
+        position: absolute;
+        top: 150%;
+        left: -75%;
+        background-color: transparent;
+        z-index: 999;
+        width: 150px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dropdown .menu-item {
+        text-decoration: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu-item {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        color: #fafafa;
+    }
+
+    .menu-item:hover,
+    .dropdownMenu-list:hover {
+        color: #ed3b44;
+    }
+
     .menu-tab {
         display: flex;
         align-items: center;
@@ -198,7 +196,6 @@
     .modal-overlay, 
     .modal {
         display: none;
-        /* background-image: url('./img/ImgHero/hero1xred-tablet.webp'); */
     }
 }
 
