@@ -4,7 +4,6 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import axios from 'axios';
 const revSlider = document.querySelector(".reviews-swiper-wrapper")
-const section = document.querySelector(".reviews-container")
 let request
 async function createRevMarkup(fetchReq) {
     
