@@ -110,7 +110,7 @@
 }
 
 .modal-overlay {
-    background-image: url('../img/ImgHero/hero1xred-mobile.webp');
+    background-image: url('./img/ImgHero/hero1xred-mobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,8 +195,10 @@
         display: none;
     }
 
-    .modal-overlay {
-        background-image: url('../img/ImgHero/hero1xred-tablet.webp');
+    .modal-overlay, 
+    .modal {
+        display: none;
+        /* background-image: url('./img/ImgHero/hero1xred-tablet.webp'); */
     }
 }
 
@@ -204,10 +206,6 @@
     .navigation-menu {
         justify-content: space-around;
         padding: 32px;
-    }
-
-    .modal-overlay {
-        background-image: url('../img/ImgHero/hero1xred-desktop.webp');
     }
 
     .section {
