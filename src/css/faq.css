@@ -1,20 +1,85 @@
-/* Уникальные стили для секции FAQ */#faq-section {
-    background-color: #121212;  padding: 40px 20px;
-    color: #fff;}
-  #faq-section .faq-container {
-    display: grid;  grid-template-columns: repeat(2, 1fr); /* Две колонки */
-    gap: 20px;  max-width: 1200px;
-    margin: 0 auto;
+/* Стили для секции FAQ */
+#faq-section {
+  background-color: #121212;
+  padding: 40px 20px;
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки на ПК */
+  gap: 40px; /* Расстояние между элементами */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 60px; /* Увеличен отступ снизу для дополнительного пространства */
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #fff; /* Заголовок белого цвета */
+}
+
+.faq-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  color: #fff; /* Стрелка тоже белая */
+}
+
+.faq-content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Стили для активного элемента */
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg); /* Переворачиваем стрелку */
+}
+
+.faq-item.active .faq-content {
+  display: block; /* Показываем текст */
+}
+
+/* Адаптация для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+  .faq-container {
+    grid-template-columns: 1fr; /* Одна колонка */
   }
-  #faq-section .faq-item {  background-color: #1e1e1e;
-    padding: 20px;  border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .faq-item {
+    padding: 15px;
+    margin-bottom: 40px; /* Уменьшен отступ снизу для мобильных */
   }
-  #faq-section .faq-item:hover {  transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);}
-  #faq-section .faq-item h3 {
-    font-size: 18px;  margin-bottom: 10px;
+
+  .faq-header h3 {
+    font-size: 16px;
   }
-  #faq-section .faq-item p {
-    font-size: 16px;  line-height: 1.5;
-    color: #ccc;}
+
+  .faq-content {
+    font-size: 14px;
+  }
+}
+
