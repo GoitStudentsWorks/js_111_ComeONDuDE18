@@ -1,17 +1,13 @@
-// Логика для FAQ (показ/скрытие контента)
-document.querySelectorAll('.faq-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const item = header.parentElement;
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-    // Закрываем другие открытые элементы
-    document.querySelectorAll('.faq-item').forEach(el => {
-      if (el !== item) {
-        el.classList.remove('active'); // Скрываем остальные элементы
-      }
-    });
+new Accordion('.ac-faq-container', {
+    duration: 600,
 
-    // Открываем или закрываем текущий элемент
-    item.classList.toggle('active');
-  });
-});
-  
+    elementClass: 'faq-item',
+    triggerClass: 'ac-title-faq',
+    panelClass: 'faq-content',
+    activeClass: 'is-active-faq',
+
+    showMultiple: true,
+})
