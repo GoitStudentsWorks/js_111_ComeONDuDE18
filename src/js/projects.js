@@ -1,12 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 const swiper = new Swiper('.project-swiper-container', {
-    modules: [Navigation, Keyboard, Mousewheel],
     slidesPerView: 1,
     spaceBetween: 16,
-    watchOverflow: false,
     loop: false,
     direction: 'horizontal',
     speed: 600,
@@ -14,14 +11,34 @@ const swiper = new Swiper('.project-swiper-container', {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
     keyboard: {
-        benabled: true,
+        enabled: true,
         onlyInViewport: true,
     },
-
     mousewheel: true,
 });
+
+const nextButton = document.querySelector('.swiper-btn-next');
+const prevButton = document.querySelector('.swiper-btn-prev');
+
+const updateNavigationButtons = () => {
+    if (swiper.activeIndex === swiper.slides.length - 1) {
+        nextButton.setAttribute('disabled', true);
+        nextButton.classList.add('disabled');
+    } else {
+        nextButton.removeAttribute('disabled');
+        nextButton.classList.remove('disabled');
+    }
+
+    if (swiper.activeIndex === 0) {
+        prevButton.setAttribute('disabled', true);
+        prevButton.classList.add('disabled');
+    } else {
+        prevButton.removeAttribute('disabled');
+        prevButton.classList.remove('disabled');
+    }
+};
+
+swiper.on('slideChange', updateNavigationButtons);
+
+updateNavigationButtons();
