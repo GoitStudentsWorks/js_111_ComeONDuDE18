@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .faq-title {
   font-weight: 600;
   font-size: 16px;
@@ -12,6 +13,20 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
+=======
+/* Стили для секции FAQ */
+#faq-section {
+  background-color: #1e1e1e;
+  padding: 40px 10px; /* Уменьшен отступ по бокам */
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки на ПК */
+  gap: 20px; /* Расстояние между карточками */
+  max-width: 1200px;
+  margin: 0 auto;
+>>>>>>> main
 }
 
 .faq-item {
@@ -27,6 +42,10 @@
 
 .faq-item.js-enabled {
   overflow: hidden;
+<<<<<<< HEAD
+=======
+  margin-bottom: 20px;
+>>>>>>> main
 }
 
 .ac-title-faq {
@@ -48,6 +67,7 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50px;
 
+<<<<<<< HEAD
   width: 34px;
   height: 34px;
 
@@ -59,6 +79,19 @@
   margin-left: 44px;
 
   transition: background-color 250ms ease;
+=======
+.faq-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #555; /* Серый круг */
+  color: #fff; /* Белая стрелка */
+  font-size: 16px;
+  transition: transform 0.3s ease;
+>>>>>>> main
 }
 
 .faq-content {
@@ -67,6 +100,7 @@
 
   font-weight: 500;
   font-size: 16px;
+<<<<<<< HEAD
   line-height: 150%;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
@@ -78,12 +112,23 @@
 
   transition: stroke 250ms ease,
               transform 250ms ease;
+=======
+  line-height: 1.5;
+  color: #999; /* Текст серого цвета */
+  margin-top: 10px;
+  display: none; /* Скрываем контент по умолчанию */
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg); /* Переворачиваем стрелку */
+>>>>>>> main
 }
 
 .is-active-faq .ac-icon-faq {
   transform: rotate(-180deg);
 }
 
+<<<<<<< HEAD
 .ac-title-faq:hover .ac-trigger-faq,
 .ac-title-faq:focus .ac-trigger-faq {
   background-color: #ed3b44;
@@ -103,6 +148,12 @@
   .faq-content {
     margin-right: 48px;
     margin-top: 26px;
+=======
+/* Адаптация для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+  .faq-container {
+    grid-template-columns: 1fr; /* Одна колонка */
+>>>>>>> main
   }
 }
 

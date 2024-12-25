@@ -1,25 +1,25 @@
 <section class="section" id="worktogether">
-  <div class="footer container">
+  <div class="container">
     <h2 class="footer-title">
       <picture class="title-image">
         <source
           srcset="
-            ../img/ImgWorkTG/foto-tablet-desktop-min.png    1x,
-            ../img/ImgWorkTG/foto-tablet-desktop@2x-min.png 2x
+            ../img/imgworktg/foto-tablet-desktop-min.png    1x,
+            ../img/imgworktg/foto-tablet-desktop@2x-min.png 2x
           "
           media="(min-width: 1440px)"
           type="image/webp"
         />
         <source
           srcset="
-            ../img/ImgWorkTG/foto-mobile-min.png    1x,
-            ../img/ImgWorkTG/foto-mobile@2x-min.png 2x
+            ../img/imgworktg/foto-mobile-min.png    1x,
+            ../img/imgworktg/foto-mobile@2x-min.png 2x
           "
           media="(max-width: 1139px)"
           type="image/webp"
         />
         <img
-          src="../img/ImgWorkTG/foto-tablet-desktop-min.png"
+          src="../img/imgworktg/foto-tablet-desktop-min.png"
           alt="Photo"
           width="70"
           height="70"
@@ -29,23 +29,28 @@
     </h2>
     <form class="submit-form submit-form-js">
       <div class="input-wrap">
-        <input
-          type="email"
-          class="input"
-          name="userEmail"
-          id="user-email"
-          placeholder="clients@gmail.com"
-        />
-        <span class="email-text-success">Success!</span>
-        <span class="email-text-error">Invalid email, try again!</span>
-        <input
-          type="text"
-          class="input"
-          name="userComments"
-          id="user-comments"
-          placeholder="comments"
-        />
-        <span class="comments-text-error">This field is required!</span>
+        <div>
+          <input
+            type="email"
+            class="input"
+            name="userEmail"
+            id="user-email"
+            placeholder="clients@gmail.com"
+          />
+          <span class="email-text-success">Success!</span>
+          <span class="email-text-error">Invalid email, try again!</span>
+        </div>
+        <div>
+          <input
+            type="text"
+            class="input"
+            name="userComments"
+            id="user-comments"
+            placeholder="comments"
+            autocomplete="off"
+          />
+          <span class="comments-text-error">This field is required!</span>
+        </div>
       </div>
       <button class="send-btn" type="submit">Send</button>
     </form>
@@ -61,5 +66,12 @@
         </li>
       </ul>
     </address>
+    <div class="modal-worktogether">
+      <div class="modal-window">
+        <button type="button" class="modal-window-btn">
+          <img src="../img/svg/menu-close.svg" alt="close-button" />
+        </button>
+      </div>
+    </div>
   </div>
 </section>
