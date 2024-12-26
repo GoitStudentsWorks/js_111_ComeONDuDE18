@@ -68,5 +68,11 @@ const swiper = new Swiper('.reviews-swiper-container', {
     navigation: {
         nextEl: '.reviews-swiper-right',
         prevEl: '.reviews-swiper-left',
+  },
+  keyboard: {
+        enabled: true,
+        onlyInViewport: true,
     },
+    mousewheel: true,
 });
+
