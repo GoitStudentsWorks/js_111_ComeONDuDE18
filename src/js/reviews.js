@@ -4,13 +4,12 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import axios from 'axios';
 const revSlider = document.querySelector(".reviews-swiper-wrapper")
-const section = document.querySelector(".reviews-container")
 let request
 async function createRevMarkup(fetchReq) {
     
     const renderRev = fetchReq.map(({ author, avatar_url, review}) => `
-   <div class="swiper-slide">
-        <li class="reviews-list-item">
+   
+        <li class=" swiper-slide reviews-list-item">
           <img
             class="reviews-avatar"
             src="${avatar_url}"
@@ -23,7 +22,7 @@ async function createRevMarkup(fetchReq) {
             </p>
     
         </li>
-        </div>`)
+        `)
     
     revSlider.innerHTML = `${renderRev.join(" ")}`
 }
@@ -48,16 +47,6 @@ async function requestCheck() {
 
 
 requestCheck()
-
-
-
-
-
-
-
-
-
-
 
 
 

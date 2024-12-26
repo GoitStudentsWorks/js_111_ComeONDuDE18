@@ -1,78 +1,138 @@
-/* Стили для секции FAQ */
-#faq-section {
-  background-color: #1e1e1e;
-  padding: 40px 10px; /* Уменьшен отступ по бокам */
+.faq-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+
+  margin-bottom: 32px;
 }
 
-.faq-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Две колонки на ПК */
-  gap: 20px; /* Расстояние между карточками */
-  max-width: 1200px;
-  margin: 0 auto;
+.ac-faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 
 .faq-item {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-item:last-of-type {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-item.js-enabled {
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
-.faq-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
+.ac-title-faq {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
 
-.faq-header {
+  color: #fafafa;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
-.faq-header h3 {
-  font-size: 18px;
-  margin: 0;
-  color: #fff; /* Заголовок белого цвета */
-}
+.ac-trigger-faq {
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50px;
 
-.faq-arrow {
+  width: 34px;
+  height: 34px;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #555; /* Серый круг */
-  color: #fff; /* Белая стрелка */
-  font-size: 16px;
-  transition: transform 0.3s ease;
+  justify-content: center;
+  padding: 7px;
+
+  margin-left: 44px;
+
+  transition: background-color 250ms ease;
 }
 
 .faq-content {
+  margin-top: 16px;
+  overflow: hidden;
+
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  color: #999; /* Текст серого цвета */
-  margin-top: 10px;
-  display: none; /* Скрываем контент по умолчанию */
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
 }
 
-.faq-item.active .faq-arrow {
-  transform: rotate(180deg); /* Переворачиваем стрелку */
+.ac-icon-faq {
+  fill: none;
+  stroke: #fafafa;
+
+  transition: stroke 250ms ease,
+    transform 250ms ease;
 }
 
-.faq-item.active .faq-content {
-  display: block; /* Показываем текст */
+.is-active-faq .ac-icon-faq {
+  transform: rotate(-180deg);
 }
 
-/* Адаптация для планшетов и мобильных устройств */
-@media (max-width: 1024px) {
-  .faq-container {
-    grid-template-columns: 1fr; /* Одна колонка */
+.ac-title-faq:hover .ac-trigger-faq,
+.ac-title-faq:focus .ac-trigger-faq {
+  background-color: #ed3b44;
+}
+
+.ac-title-faq:hover .ac-icon-faq,
+.ac-title-faq:focus .ac-icon-faq {
+  stroke: #1c1d20;
+}
+
+@media screen and (min-width : 768px) {
+  .faq-item {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .faq-content {
+    margin-right: 48px;
+    margin-top: 26px;
   }
 }
 
+@media screen and (min-width : 1440px) {
+  .ac-faq-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faq-item {
+    padding-bottom: 26px;
+    width: 688px;
+  }
+
+  .faq-item:nth-child(odd) {
+    padding-right: 32px;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .faq-item:nth-child(even) {
+    padding-left: 32px;
+  }
+
+  .faq-item.border {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .faq-content {
+    max-width: 656px;
+    margin-right: 0;
+  }
+}

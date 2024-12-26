@@ -2,6 +2,7 @@ const modal = {
   overlay: document.querySelector('.modal-overlay'),
   openBtn: document.querySelector('.menu-btn'),
   closeBtn: document.querySelector('.modal-close-btn'),
+  orderBtn: document.querySelector('.order-btn'),
   menuItems: document.querySelectorAll('.menu-item'),
 };
 
@@ -15,6 +16,7 @@ const hideModal = () => (modal.overlay.style.display = 'none');
 
 modal.openBtn.addEventListener('click', showModal);
 modal.closeBtn.addEventListener('click', hideModal);
+modal.orderBtn.addEventListener('click', hideModal);
 modal.overlay.addEventListener('click', event => {
   if (event.target === modal.overlay) hideModal();
 });
