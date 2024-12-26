@@ -64,7 +64,7 @@
 }
 
 .modal-overlay {
-    background-image: url('./img/imgheader/hero1xred-mobile-min.png');
+    background-image: url('/img/imgheader/modal-mobile-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
