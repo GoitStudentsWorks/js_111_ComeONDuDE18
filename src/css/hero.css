@@ -2,14 +2,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-image: url('../img/imghero/hero1xred-mobile-min.png');
+  background-image: url('../img/imghero/hero1xred-mobile-min.webp');
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/imghero/hero2xred-mobile-min.png');
+    background-image: url('../img/imghero/hero2xred-mobile-min.webp');
   }
 }
 
@@ -46,13 +46,7 @@
   align-items: center;
 }
 
-.hero-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
+.hero-social,
 .hero-list {
   display: flex;
   justify-content: center;
@@ -86,14 +80,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../img/imghero/hero1xred-tablet-min.png');
+    background-image: url('../img/imghero/hero1xred-tablet-min.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/imghero/hero2xred-tablet-min.png');
+      background-image: url('../img/imghero/hero2xred-tablet-min.webp');
     }
   }
 
@@ -115,14 +109,14 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/imghero/hero1xred-desktop-min.png');
+    background-image: url('../img/imghero/hero1xred-desktop-min.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/imghero/hero2xred-desktop-min.png');
+      background-image: url('../img/imghero/hero2xred-desktop-min.webp');
     }
   }
 
