@@ -96,6 +96,10 @@
     font-size: 90px;
   }
 
+  .hero-social {
+    justify-content: end;
+  }
+
   .mail-link {
     min-width: 223px;
     min-height: 55px;
