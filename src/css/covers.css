@@ -1,9 +1,18 @@
 .container-covers {
   padding-left: 0;
   padding-right: 0;
+  
   max-width: 320px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/imgcovers/background-mob.png);
+  backdrop-filter: blur(30px);
+  background-color: rgba(217, 217, 217, 0.04);
 }
+
+
+
 
 .img-mob {
   width: 282px;
@@ -11,13 +20,7 @@
 }
 
 .content {
-  height: 375px;
-}
-
-.container-covers {
-  background-image: url(/img/imgcovers/background-mob.png);
-  backdrop-filter: blur(30px);
-  background-color: rgba(217, 217, 217, 0.04);
+  height: 508px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -138,3 +141,4 @@
     transform: translateX(-180%);
   }
 }
+
