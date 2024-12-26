@@ -90,8 +90,8 @@ img {
   }
 
   .section {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 /* Styles for Desktop devices */
@@ -102,7 +102,7 @@ img {
   }
 
   .section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 }
