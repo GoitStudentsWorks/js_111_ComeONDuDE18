@@ -1,11 +1,13 @@
-#reviews {}
-
 .reviews-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 343px;
   margin: auto;
+}
+
+.swiper {
+  max-width: 100%;
 }
 
 .error-text {
@@ -35,13 +37,15 @@
 }
 
 .reviews-list-item {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-  min-height: 330px;
+  min-height: 352px;
+  max-width: 344px;
 }
 
 .reviews-avatar {
@@ -155,9 +159,12 @@
     max-width: 1376px;
   }
 
-  .review-scroll-btns {}
+  .review-scroll-btns {
+  }
 
-  .scroll-btn {}
+  .scroll-btn {
+  }
 
-  .scroll-svg {}
+  .scroll-svg {
+  }
 }
