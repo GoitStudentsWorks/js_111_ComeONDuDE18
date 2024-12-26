@@ -1,14 +1,9 @@
-const anime = document.querySelector(".animate-section");
+// const options = {
+//     root: document.querySelector("#covers"),
+//     rootMargin: "0px",
+//     threshold: 0.5,
+//   };
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-            observer.unobserve(entry.target);
-        }
-    });
-}, {threshold: 0.5
-});
-
-
-
+//   const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {

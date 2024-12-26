@@ -1,10 +1,21 @@
-.container {
+.container-covers {
+  padding-left: 0;
+  padding-right: 0;
   max-width: 320px;
   margin: 0 auto;
 }
 
+.img-mob {
+  width: 282px;
+  height: 163px;
+}
+
+.content {
+  height: 375px;
+}
+
 .container-covers {
-  background-image: url(../img/imgcovers/background-mob.png);
+  background-image: url(/img/imgcovers/background-mob.png);
   backdrop-filter: blur(30px);
   background-color: rgba(217, 217, 217, 0.04);
 }
@@ -13,7 +24,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .container-covers {
-    background-image: url(../img/imgcovers/background-mob-2x.png);
+    background-image: url(/img/imgcovers/background-mob-2x.png);
   }
 }
 
@@ -22,9 +33,22 @@
     max-width: 768px;
   }
   .container-covers {
-    background-image: url(../img/imgcovers/background-tab.png);
+    background-image: url(/img/imgcovers/background-tab.png);
     backdrop-filter: blur(30px);
     background-color: rgba(217, 217, 217, 0.04);
+  }
+  .img-mob {
+    height: 314px;
+  }
+  .content {
+    position: relative;
+    height: 960px;
+    width: 768px;
+    overflow: hidden;
+  }
+  .img-mob {
+    width: 544px;
+    height: 314px;
   }
 }
 
@@ -32,7 +56,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .container-covers {
-    background-image: url(../img/imgcovers/background-tab-2x.png);
+    background-image: url(/img/imgcovers/background-tab-2x.png);
   }
 }
 
@@ -40,8 +64,14 @@
   .container {
     max-width: 1440px;
   }
+  .content {
+    position: relative;
+    height: 960px;
+    width: 1440px;
+    overflow: hidden;
+  }
   .container-covers {
-    background-image: url(../img/imgcovers/background-desc.png);
+    background-image: url(/img/imgcovers/background-desk.png);
     backdrop-filter: blur(30px);
     background-color: rgba(217, 217, 217, 0.04);
   }
@@ -51,7 +81,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .container-covers {
-    background-image: url(../img/imgcovers/background-desc-2x.png);
+    background-image: url(/img/imgcovers/background-desk-2x.png);
   }
 }
 
@@ -83,12 +113,12 @@
 .marquee-inner {
   display: flex;
   transform: rotate(16deg);
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .marquee-line {
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
