@@ -80,29 +80,29 @@ const allValidate = () => {
   });
 };
 
-const KEY = 'storegeForm';
+const KEY = 'storageForm';
 
-const storegeForm = getLocalStorage() || {
+const storageForm = getLocalStorage() || {
   userEmail: '',
   userComments: '',
 };
 
-inputEmail.value = storegeForm.userEmail;
-inputComments.value = storegeForm.userComments;
+inputEmail.value = storageForm.userEmail;
+inputComments.value = storageForm.userComments;
 
 form.addEventListener('input', event => {
   fieldValidate(event.target);
 
   const { name, value } = event.target;
-  storegeForm[name] = value.trim();
-  setLocalStorage(storegeForm);
+  storageForm[name] = value.trim();
+  setLocalStorage(storageForm);
 });
 
 form.addEventListener('submit', onSubmit);
 
 async function onSubmit(event) {
   event.preventDefault();
-  const { userEmail, userComments } = storegeForm;
+  const { userEmail, userComments } = storageForm;
 
   const isValidEmail = emailValidate(userEmail);
   const isValidText = textValidate(userComments);
@@ -123,6 +123,7 @@ async function onSubmit(event) {
     iziToast.error({
       title: 'Error',
       message: error.message,
+      position: 'bottomRight',
     });
   }
 }
@@ -138,6 +139,6 @@ function resetData(key = KEY) {
   localStorage.removeItem(key);
   form.reset();
   allValidate();
-  storegeForm.userEmail = '';
-  storegeForm.userComments = '';
+  storageForm.userEmail = '';
+  storageForm.userComments = '';
 }
