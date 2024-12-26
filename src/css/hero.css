@@ -2,14 +2,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-image: url('./img/imghero/hero1xred-mobile.png');
+  background-image: url('../img/imghero/hero1xred-mobile-min.png');
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('./img/imghero/hero2xred-mobile.png');
+    background-image: url('../img/imghero/hero2xred-mobile-min.png');
   }
 }
 
@@ -88,14 +88,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('./img/imghero/hero1xred-tablet.png');
+    background-image: url('../img/imghero/hero1xred-tablet-min.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('./img/imghero/hero2xred-tablet.png');
+      background-image: url('../img/imghero/hero2xred-tablet-min.png');
     }
   }
 
@@ -117,14 +117,14 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('./img/imghero/hero1xred-desktop.png');
+    background-image: url('../img/imghero/hero1xred-desktop-min.png');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('./img/imghero/hero2xred-desktop.png');
+      background-image: url('../img/imghero/hero2xred-desktop-min.png');
     }
   }
 
