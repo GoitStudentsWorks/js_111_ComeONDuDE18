@@ -66,6 +66,10 @@ font-family: Inter Tight;
   gap: 4px;
 }
 
+.hero-social {
+  flex-wrap: wrap;
+}
+
 
 
 .social-link:hover,
