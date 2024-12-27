@@ -11,8 +11,14 @@ const dropdown = {
   toggleBtn: document.querySelector('.menu-tab'),
 };
 
-const showModal = () => (modal.overlay.style.display = 'block');
-const hideModal = () => (modal.overlay.style.display = 'none');
+const showModal = () => {
+  modal.overlay.style.display = 'block';
+  document.body.classList.add('noscroll');
+};
+const hideModal = () => {
+  modal.overlay.style.display = 'none';
+  document.body.classList.remove('noscroll');
+};
 
 modal.openBtn.addEventListener('click', showModal);
 modal.closeBtn.addEventListener('click', hideModal);

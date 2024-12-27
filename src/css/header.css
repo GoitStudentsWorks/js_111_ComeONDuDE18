@@ -1,3 +1,7 @@
+body.noscroll {
+    overflow: hidden;
+}
+
 .header {
     background-color: transparent;
     position: absolute;
@@ -36,7 +40,8 @@
     display: none;
 }
 
-.order-btn {
+.order-btn,
+.order-btn-tab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +60,8 @@
     color: #fafafa;
 }
 
-.order-btn:hover {
+.order-btn:hover, 
+.order-btn-tab:hover {
     background: #e0373f;
 }
 
@@ -117,6 +123,7 @@
 @media screen and (min-width: 768px) {
     .navigation-menu {
         gap: 151px;
+        padding: 32px;
     }
 
     .menu-btn {
@@ -196,11 +203,5 @@
     .modal-overlay, 
     .modal {
         display: none;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .navigation-menu {
-        padding: 32px;
     }
 }
