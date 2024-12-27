@@ -2,14 +2,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-image: url('../img/imghero/hero1xred-mobile-min.png');
+  background-image: url('../img/imghero/hero1xred-mobile-min.webp');
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/imghero/hero2xred-mobile-min.png');
+    background-image: url('../img/imghero/hero2xred-mobile-min.webp');
   }
 }
 
@@ -31,6 +31,30 @@
   gap: 4px;
 }
 
+.mail {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 223px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.mail:hover,
+.mail:focus,
+.mail:active {
+  border-color: #fafafa;
+}
+
+.mail-link {
+  display: flex;
+  min-width: 178px;
+  min-height: 34px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-social,
 .hero-list {
   display: flex;
   justify-content: center;
@@ -88,14 +112,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../img/imghero/hero1xred-tablet-min.png');
+    background-image: url('../img/imghero/hero1xred-tablet-min.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/imghero/hero2xred-tablet-min.png');
+      background-image: url('../img/imghero/hero2xred-tablet-min.webp');
     }
   }
 
@@ -124,14 +148,14 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/imghero/hero1xred-desktop-min.png');
+    background-image: url('../img/imghero/hero1xred-desktop-min.webp');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../img/imghero/hero2xred-desktop-min.png');
+      background-image: url('../img/imghero/hero2xred-desktop-min.webp');
     }
   }
 
@@ -141,3 +165,4 @@
     width: 1140px;
   }
 }
+
