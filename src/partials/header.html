@@ -1,20 +1,47 @@
-<section id="header">
-  <div class="navigation-menu container">
-    <a class="logo-link" href="#header">
-      <img src="./img/svg/logo.svg" width="80" height="80" alt="logo" />
-      <p class="logo-name">jefferson*</p>
-    </a>
-    <button class="menu-btn">
+<div class="navigation-menu container">
+  <a class="logo-link" href="#header">
+    <img src="./img/svg/logo.svg" width="80" height="80" alt="logo" />
+    <p class="logo-name">jefferson*</p>
+  </a>
+  <button class="menu-btn">
+    <img
+      src="./img/svg/menu-open.svg"
+      width="28"
+      height="28"
+      alt="menu-button"
+    />
+  </button>
+  <div class="menu-container">
+    <button id="menuButton" class="menu-tab">Menu</button>
+    <ul id="dropdownMenu" class="dropdown hidden">
+      <li class="menu-item">
+        <a href="#aboutme">About me</a>
+      </li>
+      <li class="menu-item">
+        <a href="#benefits">Benefits</a>
+      </li>
+      <li class="menu-item">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="menu-item">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <a href="#worktogether" class="order-btn order-btn-tab">Order the project</a>
+</div>
+<div class="modal-overlay hidden">
+  <div class="modal">
+    <button class="modal-close-btn">
       <img
-        src="./img/svg/menu-open.svg"
+        src="./img/svg/menu-close.svg"
         width="28"
         height="28"
-        alt="menu-button"
+        alt="close-button"
       />
     </button>
-    <div class="menu-container">
-      <button id="menuButton" class="menu-tab">Menu</button>
-      <ul id="dropdownMenu" class="dropdown hidden">
+    <nav class="menu">
+      <ul class="menu-list">
         <li class="menu-item">
           <a href="#aboutme">About me</a>
         </li>
@@ -28,38 +55,7 @@
           <a href="#faq">FAQ</a>
         </li>
       </ul>
-    </div>
-    <a href="#worktogether" class="order-btn order-btn-tab"
-      >Order the project</a
-    >
+    </nav>
+    <a href="#worktogether" class="order-btn">Order the project</a>
   </div>
-  <div class="modal-overlay hidden">
-    <div class="modal">
-      <button class="modal-close-btn">
-        <img
-          src="./img/svg/menu-close.svg"
-          width="28"
-          height="28"
-          alt="close-button"
-        />
-      </button>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a href="#aboutme">About me</a>
-          </li>
-          <li class="menu-item">
-            <a href="#benefits">Benefits</a>
-          </li>
-          <li class="menu-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="menu-item">
-            <a href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#worktogether" class="order-btn">Order the project</a>
-    </div>
-  </div>
-</section>
+</div>
