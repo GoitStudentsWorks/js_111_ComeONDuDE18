@@ -1,8 +1,9 @@
 .footer {
+  padding-bottom: 0;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay; */
   background-image: url('../img/imgworktg/Fon-mob@1x-min.png');
 }
 
@@ -168,7 +169,7 @@
     margin: 0;
     position: absolute;
     top: -75%;
-    left: 75%;
+    left: 80%;
   }
 
   .contacts-list {
@@ -186,6 +187,7 @@
 @media only screen and (min-width: 1440px) {
   .footer {
     margin-top: 80px;
+    background-position: right 20% bottom 50%;
     background-image: url('../img/imgworktg/Fon-deskt@1x-min.png');
   }
 
